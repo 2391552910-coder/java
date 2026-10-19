@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Java学习 · AI应用后端</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#lesson">跳到课程正文</a>
+  <header class="topbar">
+    <a class="brand" href="#00"><span class="logo">J</span><span>Java学习<small>从 Python 到 AI 业务后端</small></span></a>
+    <div class="tools"><button id="review">复习错题</button><button id="export">导出进度</button><label class="button" for="import">导入进度</label><input type="file" id="import" accept="application/json,.json" hidden></div>
+  </header>
+  <div class="layout">
+    <aside aria-label="课程导航">
+      <p class="eyebrow">你的学习工作台</p><h1>学一点，做出来。</h1>
+      <p class="muted">中文讲解 → 动手实现 → 验证理解<br>不需要先读官方文档。</p>
+      <div class="progress-box"><div><strong id="progressText">0 / 16 课</strong><span class="muted">实践自评</span></div><progress id="progress" max="16" value="0"></progress></div>
+      <label class="search-label" for="search">找一节课</label><input id="search" type="search" placeholder="例如：事务、权限、Python">
+      <nav id="nav" aria-label="课程列表"></nav>
+      <p class="small muted">进度保存在当前浏览器。更换设备前请导出；不会自动同步 GitHub。无需 API Key。</p>
+    </aside>
+    <main id="lesson" tabindex="-1"></main>
+  </div>
+  <div id="notice" role="status" aria-live="polite"></div>
+  <noscript>互动页需要启用 JavaScript；也可直接阅读仓库 lessons 目录中的 Markdown 讲义。</noscript>
+  <script src="course.js"></script><script src="model.js"></script><script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+name: 学习问题记录
+description: 保存本课代码、报错与自己的尝试，方便后续复盘
+title: "[学习] 第 xx 课："
+body:
+  - type: input
+    id: lesson
+    attributes:
+      label: 课程编号与任务
+    validations:
+      required: true
+  - type: textarea
+    id: attempt
+    attributes:
+      label: 我的实现与预期
+      description: 只贴最小相关代码，不包含密钥和私人数据。
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 运行命令、版本与实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: hypotheses
+    attributes:
+      label: 我已经尝试的排查与证据
+  - type: textarea
+    id: takeaway
+    attributes:
+      label: 修复后复盘与独立变式
